@@ -27,6 +27,13 @@ export default {
 </script>
 
 <style>
+/* 
+	TODO: 
+	1. Mess with some quick designs in Figma
+	2. Create components to match previous pages 
+
+*/
+
 *, *::before, *::after {
 	margin: 0;
 	padding: 0;
