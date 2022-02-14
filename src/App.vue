@@ -1,31 +1,42 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" id="vue-logo">
-    <HomePage msg="I'm centered"/>
+		<Navbar></Navbar>
+		<router-view></router-view>
   </div>
 </template>
 
 <script>
-import HomePage from './components/HomePage.vue'
+import Navbar from './components/Navbar.vue'
 
 export default {
   name: 'App',
   components: {
-    HomePage
-  }
+    // Home,
+		Navbar,
+		// Activities,
+		// Creators,
+		// DateIdeas,
+		// Restaurants
+  },
+	data() {
+		return {
+			msg: "I'm centered"
+		}
+	}
 }
 </script>
 
 <style>
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  margin-top: 60px;
-}
-
-#vue-logo {
-	margin: 0 auto;
 }
 </style>

@@ -1,16 +1,15 @@
 <template>
 <div>
-	<h1 class="text-center">Hello world</h1>
-	<p class="text-center font-bold">{{ msg }} - and bold!</p>
+	<h1>Activities</h1>
 </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
+  name: 'Activities',
+	created() {
+		document.title = "Activities - LocalLogan";
+	}
 }
 </script>
 
