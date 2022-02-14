@@ -28,4 +28,4 @@ npm run serve
 
 After running the last command, your terminal should say which port the app has started on. Navigate to that and you should see the main page.
 
-![LocalLogan Logo](images/white.png)
+![LocalLogan Logo](src/assets/logo-white.png)
